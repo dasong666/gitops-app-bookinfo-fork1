@@ -9,7 +9,10 @@ resources:
 - ../../base
 
 #components:
-#  - ../../variants/test
+#  - ../../variants/mesh
 
 patchesStrategicMerge:
-- version.yaml
+- version-details.yaml
+- version-ratings.yaml
+- version-reviews.yaml
+- version-productpage.yaml
