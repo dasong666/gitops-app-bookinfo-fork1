@@ -12,4 +12,4 @@ resources:
 #  - ../../variants/test
 
 patchesStrategicMerge:
-- version.yml
+- version.yaml
