@@ -8,8 +8,8 @@ namespace: bookinfo-qa
 resources:
 - ../../base
 
-#components:
-#  - ../../variants/mesh
+components:
+- ../../variants/mesh
 
 patchesStrategicMerge:
 - version-details-v1.yaml
