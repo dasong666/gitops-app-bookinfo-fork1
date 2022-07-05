@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: productpage-v1
+spec:
+  template:
+    spec:
+      containers:
+      - name: productpage
+        image: quay.io/maistra/examples-bookinfo-productpage-v1:2.1.0

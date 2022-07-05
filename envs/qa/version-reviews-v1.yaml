@@ -1,0 +1,11 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: reviews-v1
+spec:
+  template:
+    spec:
+      containers:
+      - name: reviews
+        image: quay.io/maistra/examples-bookinfo-reviews-v1:2.1.0
