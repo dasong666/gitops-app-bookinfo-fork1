@@ -12,7 +12,7 @@ resources:
 #  - ../../variants/mesh
 
 patchesStrategicMerge:
-- version-details.yaml
-- version-ratings.yaml
-- version-reviews.yaml
-- version-productpage.yaml
+- version-details-v1.yaml
+- version-ratings-v1.yaml
+- version-reviews-v1.yaml
+- version-productpage-v1.yaml
