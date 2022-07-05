@@ -1,6 +1,6 @@
 # GitOps manifest for bookinfo application
 
-For conventions, see this [post by Kostis Kapelonis about GitOps and application release promotion].
+For conventions, see this [post by Kostis Kapelonis about GitOps and application release promotion](https://codefresh.io/blog/how-to-model-your-gitops-environments-and-promote-releases-between-them).
 
 ## Provision bookinfo application with CLI
 
