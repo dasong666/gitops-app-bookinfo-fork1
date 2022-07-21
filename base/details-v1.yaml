@@ -35,7 +35,7 @@ spec:
   template:
     metadata:
       annotations:
-        istio.controlplane.version: 2.2
+        istio.controlplane.version: "2.2"
         sidecar.istio.io/inject: "true"
       labels:
         app: details
