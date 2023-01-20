@@ -1,14 +1,15 @@
-apiVersion: networking.istio.io/v1beta1
+apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
 metadata:
-  name: mybookinfo
+  name: bookinfo-canary
 spec:
   hosts:
-  - "bookinfo.example.com"
+  - "*"
   gateways:
-  - bookinfo-gateway-secure
+  - bookinfo-gateway
   http:
-  - match:
+  - name: secondary
+    match:
     - uri:
         exact: /productpage
     - uri:
@@ -24,3 +25,9 @@ spec:
         host: productpage
         port:
           number: 9080
+      weight: 100
+    - destination:
+        host: productpage-canary
+        port:
+          number: 9080
+      weight: 0

@@ -8,7 +8,8 @@ spec:
   gateways:
   - bookinfo-gateway
   http:
-  - match:
+  - name: primary
+    match:
     - uri:
         exact: /productpage
     - uri:
@@ -24,3 +25,9 @@ spec:
         host: productpage
         port:
           number: 9080
+      weight: 100
+    - destination:
+        host: productpage-canary
+        port:
+          number: 9080
+      weight: 0

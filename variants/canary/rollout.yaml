@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
+metadata:
+  name: rollouts-demo
+spec:
+  strategy:
+    canary:
+      canaryService: bookinfo-canary
+      stableService: bookinfo
+      trafficRouting:
+        istio:
+          virtualServices:
+          - name: productpage
+            routes:
+              - primary
+          - name: productpage-canary
+            routes:
+              - secondary
