@@ -8,6 +8,7 @@ resources:
 
 components:
   - ../../variants/mesh
+  - ../../variants/canary
 
 patchesStrategicMerge:
 - version-details-v1.yaml
